@@ -2,12 +2,11 @@
 function Card(props) {
     return(
         <div>
-            <h2>{props.title}</h2>
-            <p>{props.price}</p>
+            <img src={props.image} alt="avatar" />
+            <p>{props.title}</p>
             <p>{props.price}</p>
             <p>{props.description}</p>
-            <p>{props.category}</p>
-            <img src={props.image} alt="avatar" />
+            <button>Add to Cart</button>
         </div>
     )
 }

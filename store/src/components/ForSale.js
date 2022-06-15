@@ -5,10 +5,10 @@ function createCard(products) {
     return(
         <Card
         key={products.id}
+        image={products.image}
         title={products.title}
         price={products.price}
         category={products.category}
-        image={products.image}
         />
     )
 }
@@ -16,8 +16,7 @@ function createCard(products) {
 export default function ForSale() {
   return (
     <div>
-    <h1>Products for Sale</h1>
-    {products.map(createCard)}
+      <div className="products">{products.map(createCard)}</div>
     </div>
   )
 }
